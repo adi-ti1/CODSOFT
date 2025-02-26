@@ -3,17 +3,7 @@
 import java.util.*;
 import java.util.concurrent.*;
 
-class Question {
-    String question;
-    String[] options;
-    int correctOption;
 
-    public Question(String question, String[] options, int correctOption) {
-        this.question = question;
-        this.options = options;
-        this.correctOption = correctOption;
-    }
-}
 
 public class Main {
 
@@ -76,5 +66,17 @@ public class Main {
         System.out.println("Quiz Over!");
         System.out.println("Your final score is: " + score + " / " + questions.size());
         System.out.println("Thank you for playing!");
+    }
+}
+
+class Question {
+    String question;
+    String[] options;
+    int correctOption;
+
+    public Question(String question, String[] options, int correctOption) {
+        this.question = question;
+        this.options = options;
+        this.correctOption = correctOption;
     }
 }
